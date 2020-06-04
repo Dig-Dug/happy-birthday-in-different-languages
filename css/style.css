@@ -1,0 +1,62 @@
+body {
+	font-family: calibri;
+}
+
+h1 {
+	color: #808cb3;
+	letter-spacing: 3px;
+	text-shadow: 3px 2px lightgrey;
+}
+
+p {
+	color: #5778db;
+}
+
+a:link {
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover {
+	color: blue;
+}
+
+td, th {
+	width: 300px;
+	font-size: 40px;
+	text-align: center;
+}
+
+tr:nth-Child(even) {
+	color: lightgray;
+	background-color: red;
+}
+
+tr:nth-Child(odd) {
+	color: black;
+	background-color: lightblue;
+}
+
+div {
+	color: black;
+	background-color: lightblue;
+	min-width: 500px;
+}
+
+button {
+    background-color: #808cb3;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin: 10px;
+}
+
+
+#gruss {
+	font-size: 40px;
+	text-align: center;
+}

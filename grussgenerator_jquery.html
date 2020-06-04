@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+    <head>
+        <title>Hier könnte Ihr Titel stehen</title>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.3.1.js"></script>
+		<script>
+			var wahl = "";
+			$( document ).ready(function() {
+				/* ------------------------------ */
+				$( "#sprache" ).change(function() {
+				wahl = this.value;
+				$.getJSON("gruss.json", function(result){
+					$('#gruss').text(result[wahl]);
+				});
+				});	
+				/* ------------------------------ */				
+			});
+		</script>
+    </head>
+    <body>
+        <h1>Geburtstagsgruß-Generator</h1>
+		Wählen Sie die gewünschte Sprache aus.<br>
+		<select name="sprache" id ="sprache">
+			<option value="italian">Italienisch</option>
+			<option value="german" selected ="selected">Deutsch</option>
+			<option value="english">Englisch</option>
+			<option value="greek">Griechisch</option>
+			<option value="latin">Lateinisch</option>
+			<option value="esperanto">Esperanto</option>
+		</select><br>
+		<table>
+			<tr>
+				<td><img src="img/rosen.jpg"</td>
+				<td id="gruss">Alles Gute zum Geburtstag!</td>
+			</tr>
+			<div id="test"></div>
+		</table>
+		<script>
+
+		</script>
+    </body>
+</html>
